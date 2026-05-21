@@ -1,7 +1,7 @@
 /* SERVICES SECTION */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
@@ -56,10 +56,17 @@
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 640px) {
+  .service-item:last-child:nth-child(3n+1),
+  .service-item:last-child:nth-child(4n+1) {
+    grid-column: span 1;
+  }
+}
+
 /* TEAM SECTION */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
