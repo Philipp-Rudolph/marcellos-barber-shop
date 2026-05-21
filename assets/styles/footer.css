@@ -42,3 +42,18 @@ footer {
 .footer-links a:hover {
   color: var(--accent);
 }
+
+.phone-link, .map-link {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.phone-link:hover, .map-link:hover {
+  color: var(--accent);
+}
+
