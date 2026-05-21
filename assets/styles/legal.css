@@ -1,0 +1,95 @@
+/* LEGAL PAGES */
+.legal-page {
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.legal-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+
+.legal-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: 0.03em;
+  margin-bottom: 3rem;
+}
+
+.legal-content {
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.legal-content h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-content h4 {
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-content p {
+  font-size: 0.95rem;
+  color: var(--muted2);
+  margin-bottom: 1rem;
+}
+
+.legal-content ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.legal-content ul li {
+  font-size: 0.95rem;
+  color: var(--muted2);
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.legal-content ul li::before {
+  content: "—";
+  color: var(--accent);
+  position: absolute;
+  left: -1.5rem;
+}
+
+.legal-content a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-strong);
+  transition: border-color 0.2s;
+}
+
+.legal-content a:hover {
+  border-color: var(--accent);
+}
+
+.legal-back {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}

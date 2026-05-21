@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcello's — Barbershop</title>
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="cookie-banner" hidden>
+      <p class="cookie-text">
+        Für die Online-Terminbuchung nutzen wir <strong>Cal.com</strong>, ein externes Tool das Cookies setzt.
+        <a href="./datenschutz.html">Datenschutz</a>
+      </p>
+      <div class="cookie-actions">
+        <button id="cookie-decline" class="btn-secondary">Ablehnen</button>
+        <button id="cookie-accept" class="btn-primary">Akzeptieren</button>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#">Marcello Barber Shop</a>
+      <ul class="nav-links">
+        <li><a href="#services">Leistungen</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#booking">Termin</a></li>
+      </ul>
+      <a class="nav-cta" href="#booking">Termin buchen</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-eyebrow">Barbershop · seit 2014</div>
+        <h1 class="hero-title">
+          Marcello's
+          <span>-</span>
+          Barber Shop
+        </h1>
+        <p class="hero-desc">
+          Precision cuts. Classic shaves. No compromises. Dein
+          Handwerk-Barbershop mitten in der Stadt — wo jeder Schnitt ein
+          Statement ist.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#booking">Jetzt Termin buchen</a>
+          <a class="btn-secondary" href="#services">Leistungen ansehen</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-img-placeholder">
+          <img
+            src="/assets/images/hero.jpg"
+            alt="Bild des Friseursalons und des Teams"
+            class="hero-img"
+          />
+        </div>
+
+        <div class="hero-stat-strip">
+          <div class="hero-stat">
+            <span class="hero-stat-num">10+</span>
+            <span class="hero-stat-label">Jahre Erfahrung</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">3</span>
+            <span class="hero-stat-label">Meister-Barber</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">5★</span>
+            <span class="hero-stat-label">Google Rating</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span class="marquee-item">Herrenschnitt</span>
+        <span class="marquee-item">Bartpflege</span>
+        <span class="marquee-item">Rasur</span>
+        <span class="marquee-item">Fade & Taper</span>
+        <span class="marquee-item">Styling</span>
+        <span class="marquee-item">Skin Fade</span>
+        <span class="marquee-item">Hot Towel</span>
+        <span class="marquee-item">Kinderschnitt</span>
+        <span class="marquee-item">Herrenschnitt</span>
+        <span class="marquee-item">Bartpflege</span>
+        <span class="marquee-item">Rasur</span>
+        <span class="marquee-item">Fade & Taper</span>
+        <span class="marquee-item">Styling</span>
+        <span class="marquee-item">Skin Fade</span>
+        <span class="marquee-item">Hot Towel</span>
+        <span class="marquee-item">Kinderschnitt</span>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="section-header fade-up">
+        <div>
+          <div class="section-label">Was wir machen</div>
+          <h2 class="section-title">Leistungen</h2>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item fade-up">
+          <div class="service-num">01</div>
+          <div class="service-name">Haarschnitt & Stylen</div>
+          <p class="service-desc">
+            Klassisch oder modern — jeder Schnitt wird präzise auf deine
+            Kopfform und deinen Stil abgestimmt. Inklusive Waschen & Styling.
+          </p>
+          <div class="service-price">ab 20 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">02</div>
+          <div class="service-name">Bart & Rasur</div>
+          <p class="service-desc">
+            Von Low Fade bis Skin Fade: saubere Übergänge, die sitzen. Das
+            Handwerk, das deinen Look definiert.
+          </p>
+          <div class="service-price">ab 20 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">03</div>
+          <div class="service-name">Kinder Haarschnitt</div>
+          <p class="service-desc">
+            Bis 12 Jahre. Geduldig, spielerisch, sauber. Ein Erlebnis, das auch
+            Eltern entspannt.
+          </p>
+          <div class="service-price">ab 15 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">04</div>
+          <div class="service-name">Maschinenschnitt</div>
+          <p class="service-desc">
+            Das komplette Paket. Schnitt und Bartpflege in einer Session — für
+            den Look, der alles zusammenhält.
+          </p>
+          <div class="service-price">ab 15 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">05</div>
+          <div class="service-name">Augenbrauenzupfen</div>
+          <p class="service-desc">
+            Präzises Zupfen und Formen der Augenbrauen für einen gepflegten
+            Look.
+          </p>
+          <div class="service-price">ab 10 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">06</div>
+          <div class="service-name">Wachs</div>
+          <p class="service-desc">
+            Das Ritual. Warmes Tuch, Schaum, Rasiermesser — pure Entspannung und
+            makellose Glätte.
+          </p>
+          <div class="service-price">ab 5 €</div>
+        </div>
+        <div class="service-item fade-up">
+          <div class="service-num">07</div>
+          <div class="service-name">Komplettpaket VIP</div>
+          <p class="service-desc">
+            Das komplette Paket. Schnitt, Bartpflege und Wachsritual in einer
+            Session — für den Look, der alles zusammenhält.
+          </p>
+          <div class="service-price">ab 60 €</div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- TEAM -->
+    <section id="team" class="section">
+      <div class="section-header fade-up">
+        <div>
+          <div class="section-label">Die Meister</div>
+          <h2 class="section-title">Unser Team</h2>
+        </div>
+        <a class="btn-secondary" href="#booking">Barber wählen →</a>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card fade-up">
+          <div class="team-photo">
+            <!-- <div class="team-photo-inner">F</div> -->
+            <img
+              src="/assets/images/firas-profile.jpg"
+              class="team-photo-inner"
+            />
+          </div>
+          <div class="team-info">
+            <div class="team-name">Firas</div>
+            <div class="team-role">Head Barber</div>
+            <p class="team-spec">
+              Spezialisiert auf klassische Herrenschnitte, Skin Fades und heiße
+              Rasur. 10+ Jahre Erfahrung.
+            </p>
+            <button
+              class="btn-secondary"
+              data-cal-link="marcello-barber-shop/firas"
+              data-cal-namespace="firas"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            >
+              Bei Firas buchen →
+            </button>
+          </div>
+        </div>
+        <div class="team-card fade-up">
+          <div class="team-photo">
+            <!-- <div class="team-photo-inner">K</div> -->
+            <img
+              src="/assets/images/delwar-profile.jpg"
+              class="team-photo-inner"
+            />
+          </div>
+          <div class="team-info">
+            <div class="team-name">Delwar</div>
+            <div class="team-role">Barber</div>
+            <p class="team-spec">
+              Meister für Fades, Taper und moderne Styles. Bartdesign &
+              Konturarbeiten auf höchstem Niveau.
+            </p>
+            <button
+              class="btn-secondary"
+              data-cal-link="marcello-barber-shop/delwar"
+              data-cal-namespace="delwar"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            >
+              Bei Delwar buchen →
+            </button>
+          </div>
+        </div>
+        <div class="team-card fade-up">
+          <div class="team-photo">
+            <div class="team-photo-inner">Comming soon</div>
+            <!-- <img src="team-despina.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top"> -->
+          </div>
+          <div class="team-info">
+            <div class="team-name">Despina</div>
+            <div class="team-role">Barber</div>
+            <p class="team-spec">
+              Freestyle- und Textured-Cuts, Kinderhaarschnitte und entspannte
+              Atmosphäre — Despina ist das Herzstück des Ladens.
+            </p>
+            <button
+              class="btn-secondary"
+              data-cal-link="marcello-barber-shop/despina"
+              data-cal-namespace="despina"
+              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            >
+              Bei Despina buchen →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking">
+      <div class="booking-inner">
+        <div class="booking-grid">
+          <div class="booking-info fade-up">
+            <div class="section-label">Online Buchung</div>
+            <h2 class="section-title">Termin<br />buchen</h2>
+            <p>
+              Wähle deinen Barber, deine Leistung und deinen Wunschtermin —
+              alles online, in unter zwei Minuten.
+            </p>
+
+            <div class="booking-meta">
+              <div class="booking-meta-item">
+                <div class="booking-meta-icon">
+                  <img
+                    src="./assets/icons/clock.svg"
+                    alt="Clock"
+                    width="20"
+                    height="20"
+                  />
+                </div>
+                Mo-Fr 09:00-19:00 Uhr
+              </div>
+              <div class="booking-meta-item">
+                <div class="booking-meta-icon">
+                  <img
+                    src="./assets/icons/calendar.svg"
+                    alt="Calendar"
+                    width="20"
+                    height="20"
+                  />
+                </div>
+                Sa 09:00-17:00 Uhr
+              </div>
+              <div class="booking-meta-item">
+                <div class="booking-meta-icon">
+                  <img
+                    src="./assets/icons/map-pin.svg"
+                    alt="Location"
+                    width="20"
+                    height="20"
+                  />
+                </div>
+                Paffrather Straße 3, 51465 Bergisch Gladbach
+              </div>
+              <div class="booking-meta-item">
+                <div class="booking-meta-icon">
+                  <img
+                    src="./assets/icons/phone.svg"
+                    alt="Phone"
+                    width="20"
+                    height="20"
+                  />
+                </div>
+                02204 / 123 456 78
+              </div>
+            </div>
+          </div>
+
+          <!-- CAL.COM EMBED -->
+          <div class="cal-embed-wrapper fade-up">
+            <!-- Barber Selection Tabs -->
+            <div class="barber-tabs">
+              <button
+                class="barber-tab active"
+                data-barber="firas"
+                onclick="switchBarber('firas')"
+              >
+                Firas
+              </button>
+              <button
+                class="barber-tab"
+                data-barber="delwar"
+                onclick="switchBarber('delwar')"
+              >
+                Delwar
+              </button>
+              <button
+                class="barber-tab"
+                data-barber="despina"
+                onclick="switchBarber('despina')"
+              >
+                Despina
+              </button>
+            </div>
+
+            <!-- Cal inline embed code begins -->
+            <div
+              style="width: 100%; height: 100%; overflow: scroll"
+              id="my-cal-inline-marcello"
+            ></div>
+            <script type="text/javascript" src="./script.js"></script>
+            <!-- Cal inline embed code ends -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-header fade-up">
+        <div>
+          <div class="section-label">Impressionen</div>
+          <h2 class="section-title">Galerie</h2>
+        </div>
+      </div>
+
+      <div class="slider-wrapper fade-up">
+        <div class="slider" id="gallery-slider">
+          <div class="slide">
+            <img
+              src="./assets/images/A7408112.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408158.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408205.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408264.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408297.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408336.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408379.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/images/A7408485.jpg"
+              alt="Barbershop Impressionen"
+            />
+          </div>
+        </div>
+
+        <button
+          class="slider-btn slider-btn--prev"
+          aria-label="Vorheriges Bild"
+        >
+          &#8592;
+        </button>
+        <button class="slider-btn slider-btn--next" aria-label="Nächstes Bild">
+          &#8594;
+        </button>
+
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">Marcello Barber Shop</div>
+      <ul class="footer-links">
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+        <li><a href="#booking">Termin</a></li>
+      </ul>
+      <div class="footer-copy">© 2025 Marcello Barber Shop</div>
+    </footer>
+
+    <script>
+      (function () {
+        const slider = document.getElementById("gallery-slider");
+        const dotsContainer = document.getElementById("slider-dots");
+        const slides = slider.querySelectorAll(".slide");
+        let current = 0;
+
+        slides.forEach((_, i) => {
+          const dot = document.createElement("button");
+          dot.className = "slider-dot" + (i === 0 ? " active" : "");
+          dot.setAttribute("aria-label", `Bild ${i + 1}`);
+          dot.addEventListener("click", () => goTo(i));
+          dotsContainer.appendChild(dot);
+        });
+
+        function goTo(n) {
+          current = (n + slides.length) % slides.length;
+          slider.style.transform = `translateX(-${current * 100}%)`;
+          dotsContainer
+            .querySelectorAll(".slider-dot")
+            .forEach((d, i) => d.classList.toggle("active", i === current));
+        }
+
+        document
+          .querySelector(".slider-btn--prev")
+          .addEventListener("click", () => goTo(current - 1));
+        document
+          .querySelector(".slider-btn--next")
+          .addEventListener("click", () => goTo(current + 1));
+
+        let touchStartX = 0;
+        slider.addEventListener(
+          "touchstart",
+          (e) => {
+            touchStartX = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        slider.addEventListener("touchend", (e) => {
+          const diff = touchStartX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
+        });
+      })();
+    </script>
+
+    <script>
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+      );
+      document.querySelectorAll(".fade-up").forEach((el) => obs.observe(el));
+    </script>
+
+    <script>
+      function loadCal() {
+        (function (C, A, L) {
+          let p = function (a, ar) { a.q.push(ar); };
+          let d = C.document;
+          C.Cal = C.Cal || function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () { p(api, arguments); };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
+        })(window, "https://app.cal.eu/embed/embed.js", "init");
+
+        Cal("init", "firas", { origin: "https://app.cal.eu" });
+        Cal.ns.firas("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+
+        Cal("init", "delwar", { origin: "https://app.cal.eu" });
+        Cal.ns.delwar("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+
+        Cal("init", "despina", { origin: "https://app.cal.eu" });
+        Cal.ns.despina("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+      }
+
+      function showBookingBlocked() {
+        document.querySelectorAll(".cal-embed-wrapper").forEach((el) => {
+          el.innerHTML = `<div class="cal-consent-hint">
+            <p>Für die Terminbuchung muss die Nutzung von Cal.com akzeptiert werden.</p>
+            <button class="btn-primary" id="cookie-accept-inline">Jetzt akzeptieren</button>
+          </div>`;
+          el.querySelector("#cookie-accept-inline").addEventListener("click", giveConsent);
+        });
+      }
+
+      function giveConsent() {
+        localStorage.setItem("cal_consent", "1");
+        document.getElementById("cookie-banner").hidden = true;
+        loadCal();
+        document.querySelectorAll(".cal-consent-hint").forEach((el) => el.closest(".cal-embed-wrapper") && location.reload());
+      }
+
+      const banner = document.getElementById("cookie-banner");
+      document.getElementById("cookie-accept").addEventListener("click", giveConsent);
+      document.getElementById("cookie-decline").addEventListener("click", () => {
+        banner.hidden = true;
+        showBookingBlocked();
+      });
+
+      if (localStorage.getItem("cal_consent") === "1") {
+        loadCal();
+      } else {
+        banner.hidden = false;
+        showBookingBlocked();
+      }
+    </script>
+  </body>
+</html>

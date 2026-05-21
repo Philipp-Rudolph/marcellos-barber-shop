@@ -1,0 +1,50 @@
+/* Bebas Neue */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DM_Sans/static/DMSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Mono */
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../fonts/DM_Mono/DMMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('../fonts/DM_Mono/DMMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

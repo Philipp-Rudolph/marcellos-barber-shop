@@ -1,0 +1,357 @@
+/* SERVICES SECTION */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.service-item:last-child:nth-child(3n+1) {
+  grid-column: span 3;
+}
+
+.service-item:last-child:nth-child(4n+1) {
+  grid-column: span 4;
+}
+
+.service-item {
+  background: var(--bg2);
+  padding: 2.5rem 2rem;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.service-item:hover {
+  background: var(--bg3);
+}
+
+.service-num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.service-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.service-desc {
+  font-size: 0.85rem;
+  color: var(--muted2);
+  line-height: 1.65;
+  margin-bottom: 1.5rem;
+}
+
+.service-price {
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* TEAM SECTION */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.team-card {
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.team-card:hover {
+  border-color: var(--border-strong);
+}
+
+.team-photo {
+  aspect-ratio: 3/4;
+  background: var(--bg3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.team-photo-inner {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 8rem;
+  color: var(--border);
+}
+
+.team-info {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.team-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.team-spec {
+  font-size: 0.8rem;
+  color: var(--muted2);
+}
+
+/* BOOKING SECTION */
+#booking {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.booking-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.booking-info p {
+  font-size: 0.9rem;
+  color: var(--muted2);
+  line-height: 1.75;
+  margin-top: 1.5rem;
+}
+
+.booking-meta {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--muted2);
+}
+
+.booking-meta-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.cal-embed-wrapper {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.barber-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg2);
+}
+
+.barber-tab {
+  flex: 1;
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.barber-tab:last-child {
+  border-right: none;
+}
+
+.barber-tab:hover {
+  color: var(--text);
+  background: var(--bg3);
+}
+
+.barber-tab.active {
+  color: var(--accent);
+  background: var(--bg);
+  border-bottom: 2px solid var(--accent);
+}
+
+#my-cal-inline-marcello {
+  flex: 1;
+}
+
+.cal-placeholder {
+  text-align: center;
+  padding: 3rem;
+}
+
+.cal-placeholder-icon {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 5rem;
+  color: var(--border-strong);
+  margin-bottom: 1.5rem;
+}
+
+.cal-placeholder-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.cal-placeholder-sub {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cal-placeholder-code {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+/* GALLERY SLIDER */
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s, border-color 0.2s;
+  z-index: 2;
+}
+
+.slider-btn:hover {
+  background: var(--bg3);
+  border-color: var(--border-strong);
+}
+
+.slider-btn--prev { left: 1rem; }
+.slider-btn--next { right: 1rem; }
+
+.slider-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.slider-dot.active {
+  background: var(--accent);
+  transform: scale(1.4);
+}
+
+@media (max-width: 640px) {
+  .slider-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .slide {
+    aspect-ratio: 4/3;
+  }
+}
