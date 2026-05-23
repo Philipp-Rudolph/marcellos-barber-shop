@@ -1,7 +1,6 @@
 /* NAVIGATION */
 nav {
-  position: sticky;
-  top: 0;
+  position: static;
   z-index: 100;
   display: flex;
   justify-content: space-between;
