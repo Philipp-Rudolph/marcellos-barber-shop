@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 80px;
+  padding-top: 0;
   position: relative;
   overflow: hidden;
 }
