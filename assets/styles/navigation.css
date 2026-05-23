@@ -59,3 +59,9 @@ nav {
 .nav-cta:hover {
   background: var(--accent2);
 }
+
+@media (max-width: 649px) {
+  .nav-cta {
+    display: none;
+  }
+}
