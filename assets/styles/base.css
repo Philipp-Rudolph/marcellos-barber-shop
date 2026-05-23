@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: calc(80px + env(safe-area-inset-top));
+}
+
 /* CSS VARIABLES */
 :root {
   --bg: #0d0c0b;

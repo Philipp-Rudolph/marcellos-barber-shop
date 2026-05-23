@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 80px;
+  padding-top: calc(80px + env(safe-area-inset-top));
   position: relative;
   overflow: hidden;
 }
