@@ -11,7 +11,8 @@
     <!-- COOKIE BANNER -->
     <div id="cookie-banner" class="cookie-banner" hidden>
       <p class="cookie-text">
-        Für die Online-Terminbuchung nutzen wir <strong>Cal.com</strong>, ein externes Tool das Cookies setzt.
+        Für die Online-Terminbuchung nutzen wir <strong>Cal.com</strong>, ein
+        externes Tool das Cookies setzt.
         <a href="./datenschutz.html">Datenschutz</a>
       </p>
       <div class="cookie-actions">
@@ -34,7 +35,7 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
-        <div class="hero-eyebrow">Barbershop · seit 2014</div>
+        <div class="hero-eyebrow">Barbershop · seit 2025</div>
         <h1 class="hero-title">
           Marcello's
           <span>-</span>
@@ -114,7 +115,7 @@
           <div class="service-name">Haarschnitt & Stylen</div>
           <p class="service-desc">
             Klassisch oder modern — jeder Schnitt wird präzise auf deine
-            Kopfform und deinen Stil abgestimmt. Inklusive Waschen & Styling.
+            Kopfform und deinen Stil abgestimmt. Inklusive Waschen und Styling.
           </p>
           <div class="service-price">ab 20 €</div>
         </div>
@@ -122,8 +123,8 @@
           <div class="service-num">02</div>
           <div class="service-name">Bart & Rasur</div>
           <p class="service-desc">
-            Von Low Fade bis Skin Fade: saubere Übergänge, die sitzen. Das
-            Handwerk, das deinen Look definiert.
+            Konturen, Formen, Trimmen — dein Bart wird sauber definiert und auf
+            deinen Gesichtstyp abgestimmt. Auf Wunsch mit Hot Towel.
           </p>
           <div class="service-price">ab 20 €</div>
         </div>
@@ -140,8 +141,8 @@
           <div class="service-num">04</div>
           <div class="service-name">Maschinenschnitt</div>
           <p class="service-desc">
-            Das komplette Paket. Schnitt und Bartpflege in einer Session — für
-            den Look, der alles zusammenhält.
+            Schnell, sauber, präzise. Der klassische Herrenschnitt komplett mit
+            der Maschine — für den gepflegten Alltagslook.
           </p>
           <div class="service-price">ab 15 €</div>
         </div>
@@ -158,8 +159,8 @@
           <div class="service-num">06</div>
           <div class="service-name">Wachs</div>
           <p class="service-desc">
-            Das Ritual. Warmes Tuch, Schaum, Rasiermesser — pure Entspannung und
-            makellose Glätte.
+            Warmes Tuch, Schaum, Rasiermesser — pure Entspannung und makellose
+            Glätte.
           </p>
           <div class="service-price">ab 5 €</div>
         </div>
@@ -167,8 +168,8 @@
           <div class="service-num">07</div>
           <div class="service-name">Komplettpaket VIP</div>
           <p class="service-desc">
-            Das komplette Paket. Schnitt, Bartpflege und Wachsritual in einer
-            Session — für den Look, der alles zusammenhält.
+            Das komplette Paket: Haarschnitt, Bartpflege und Wachsritual in
+            einer Session — für den Look, der alles zusammenhält.
           </p>
           <div class="service-price">ab 60 €</div>
         </div>
@@ -200,8 +201,8 @@
             <div class="team-name">Firas</div>
             <div class="team-role">Head Barber</div>
             <p class="team-spec">
-              Spezialisiert auf klassische Herrenschnitte, Skin Fades und heiße
-              Rasur. 10+ Jahre Erfahrung.
+              Spezialisiert auf klassische Herrenschnitte, Hot Towel Rasur und
+              Skin Fades. 10+ Jahre Erfahrung.
             </p>
             <button
               class="btn-secondary"
@@ -225,7 +226,7 @@
             <div class="team-name">Delwar</div>
             <div class="team-role">Barber</div>
             <p class="team-spec">
-              Meister für Fades, Taper und moderne Styles. Bartdesign &
+              Meister für Fades, Taper und moderne Styles. Bartdesign und
               Konturarbeiten auf höchstem Niveau.
             </p>
             <button
@@ -307,7 +308,12 @@
                     height="20"
                   />
                 </div>
-                <a href="https://maps.app.goo.gl/yTPuYgtQNsbe4wLJ9" target="_blank" class="map-link">Paffrather Straße 3, 51465 Bergisch Gladbach</a>
+                <a
+                  href="https://maps.app.goo.gl/yTPuYgtQNsbe4wLJ9"
+                  target="_blank"
+                  class="map-link"
+                  >Paffrather Straße 3, 51465 Bergisch Gladbach</a
+                >
               </div>
               <div class="booking-meta-item">
                 <div class="booking-meta-icon">
@@ -318,7 +324,9 @@
                     height="20"
                   />
                 </div>
-                <a class="phone-link" href="tel:0220412345678">02204 / 123 456 78</a>
+                <a class="phone-link" href="tel:0220412345678"
+                  >02204 / 123 456 78</a
+                >
               </div>
             </div>
           </div>
@@ -513,40 +521,58 @@
     <script>
       function loadCal() {
         (function (C, A, L) {
-          let p = function (a, ar) { a.q.push(ar); };
-          let d = C.document;
-          C.Cal = C.Cal || function () {
-            let cal = C.Cal;
-            let ar = arguments;
-            if (!cal.loaded) {
-              cal.ns = {};
-              cal.q = cal.q || [];
-              d.head.appendChild(d.createElement("script")).src = A;
-              cal.loaded = true;
-            }
-            if (ar[0] === L) {
-              const api = function () { p(api, arguments); };
-              const namespace = ar[1];
-              api.q = api.q || [];
-              if (typeof namespace === "string") {
-                cal.ns[namespace] = cal.ns[namespace] || api;
-                p(cal.ns[namespace], ar);
-                p(cal, ["initNamespace", namespace]);
-              } else p(cal, ar);
-              return;
-            }
-            p(cal, ar);
+          let p = function (a, ar) {
+            a.q.push(ar);
           };
+          let d = C.document;
+          C.Cal =
+            C.Cal ||
+            function () {
+              let cal = C.Cal;
+              let ar = arguments;
+              if (!cal.loaded) {
+                cal.ns = {};
+                cal.q = cal.q || [];
+                d.head.appendChild(d.createElement("script")).src = A;
+                cal.loaded = true;
+              }
+              if (ar[0] === L) {
+                const api = function () {
+                  p(api, arguments);
+                };
+                const namespace = ar[1];
+                api.q = api.q || [];
+                if (typeof namespace === "string") {
+                  cal.ns[namespace] = cal.ns[namespace] || api;
+                  p(cal.ns[namespace], ar);
+                  p(cal, ["initNamespace", namespace]);
+                } else p(cal, ar);
+                return;
+              }
+              p(cal, ar);
+            };
         })(window, "https://app.cal.eu/embed/embed.js", "init");
 
         Cal("init", "firas", { origin: "https://app.cal.eu" });
-        Cal.ns.firas("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+        Cal.ns.firas("ui", {
+          theme: "dark",
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
 
         Cal("init", "delwar", { origin: "https://app.cal.eu" });
-        Cal.ns.delwar("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+        Cal.ns.delwar("ui", {
+          theme: "dark",
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
 
         Cal("init", "despina", { origin: "https://app.cal.eu" });
-        Cal.ns.despina("ui", { theme: "dark", hideEventTypeDetails: false, layout: "month_view" });
+        Cal.ns.despina("ui", {
+          theme: "dark",
+          hideEventTypeDetails: false,
+          layout: "month_view",
+        });
       }
 
       function showBookingBlocked() {
@@ -555,7 +581,10 @@
             <p>Für die Terminbuchung muss die Nutzung von Cal.com akzeptiert werden.</p>
             <button class="btn-primary" id="cookie-accept-inline">Jetzt akzeptieren</button>
           </div>`;
-          el.querySelector("#cookie-accept-inline").addEventListener("click", giveConsent);
+          el.querySelector("#cookie-accept-inline").addEventListener(
+            "click",
+            giveConsent,
+          );
         });
       }
 
@@ -563,15 +592,23 @@
         localStorage.setItem("cal_consent", "1");
         document.getElementById("cookie-banner").hidden = true;
         loadCal();
-        document.querySelectorAll(".cal-consent-hint").forEach((el) => el.closest(".cal-embed-wrapper") && location.reload());
+        document
+          .querySelectorAll(".cal-consent-hint")
+          .forEach(
+            (el) => el.closest(".cal-embed-wrapper") && location.reload(),
+          );
       }
 
       const banner = document.getElementById("cookie-banner");
-      document.getElementById("cookie-accept").addEventListener("click", giveConsent);
-      document.getElementById("cookie-decline").addEventListener("click", () => {
-        banner.hidden = true;
-        showBookingBlocked();
-      });
+      document
+        .getElementById("cookie-accept")
+        .addEventListener("click", giveConsent);
+      document
+        .getElementById("cookie-decline")
+        .addEventListener("click", () => {
+          banner.hidden = true;
+          showBookingBlocked();
+        });
 
       if (localStorage.getItem("cal_consent") === "1") {
         loadCal();
