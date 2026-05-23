@@ -9,6 +9,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 3rem;
+  padding-top: calc(1.25rem + env(safe-area-inset-top));
   border-bottom: 1px solid var(--border);
   background: rgba(13, 12, 11, 0.85);
   backdrop-filter: blur(12px);
