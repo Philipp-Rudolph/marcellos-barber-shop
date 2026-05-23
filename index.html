@@ -496,6 +496,15 @@
     </script>
 
     <script>
+      function setNavHeight() {
+        const h = document.querySelector("nav").getBoundingClientRect().height;
+        document.documentElement.style.setProperty("--nav-h", h + "px");
+      }
+      setNavHeight();
+      window.addEventListener("resize", setNavHeight);
+    </script>
+
+    <script>
       const obs = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {

@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-padding-top: calc(80px + env(safe-area-inset-top));
+  scroll-padding-top: var(--nav-h, 80px);
 }
 
 /* CSS VARIABLES */
