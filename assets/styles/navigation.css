@@ -1,6 +1,6 @@
 /* NAVIGATION */
 nav {
-  position: static;
+  position: sticky;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -61,6 +61,9 @@ nav {
 }
 
 @media (max-width: 649px) {
+  nav {
+    position: static;
+  }
   .nav-cta {
     display: none;
   }
