@@ -57,8 +57,8 @@ function switchBarber(barber) {
 
   currentBarber = barber;
 
-  // Update active tab
-  document.querySelectorAll('.barber-tab').forEach(tab => {
+  // Update active tab (scoped to booking section to avoid touching services tabs)
+  document.querySelectorAll('#booking .barber-tab').forEach(tab => {
     tab.classList.remove('active');
     if (tab.dataset.barber === barber) {
       tab.classList.add('active');
