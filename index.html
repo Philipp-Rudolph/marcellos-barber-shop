@@ -147,14 +147,6 @@
               Spezialisiert auf klassische Herrenschnitte, Hot Towel Rasur und
               Skin Fades. 10+ Jahre Erfahrung.
             </p>
-            <button
-              class="btn-secondary"
-              data-cal-link="marcello-barber-shop/firas"
-              data-cal-namespace="firas"
-              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-            >
-              Bei Firas buchen →
-            </button>
           </div>
         </div>
         <div class="team-card fade-up">
@@ -172,14 +164,6 @@
               Meister für Fades, Taper und moderne Styles. Bartdesign und
               Konturarbeiten auf höchstem Niveau.
             </p>
-            <button
-              class="btn-secondary"
-              data-cal-link="marcello-barber-shop/delwar"
-              data-cal-namespace="delwar"
-              data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
-            >
-              Bei Delwar buchen →
-            </button>
           </div>
         </div>
         <!-- <div class="team-card fade-up">
@@ -210,104 +194,50 @@
     <!-- BOOKING -->
     <section id="booking">
       <div class="booking-inner">
-        <div class="booking-grid">
-          <div class="booking-info fade-up">
-            <div class="section-label">Online Buchung</div>
-            <h2 class="section-title">Termin buchen</h2>
-            <p>
-              Wähle deinen Barber, deine Leistung und deinen Wunschtermin —
-              alles online, in unter zwei Minuten.
-            </p>
+        <div class="booking-header fade-up">
+          <div class="section-label">Termin & Kontakt</div>
+          <h2 class="section-title">So erreichst du uns</h2>
+          <p class="booking-sub">Buche deine Leistung direkt im Menü oben — oder komm einfach vorbei.</p>
+        </div>
 
-            <div class="booking-meta">
-              <div class="booking-meta-item">
-                <div class="booking-meta-icon">
-                  <img
-                    src="./assets/icons/clock.svg"
-                    alt="Clock"
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                Mo-Fr 09:00-19:00 Uhr
-              </div>
-              <div class="booking-meta-item">
-                <div class="booking-meta-icon">
-                  <img
-                    src="./assets/icons/calendar.svg"
-                    alt="Calendar"
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                Sa 09:00-17:00 Uhr
-              </div>
-              <div class="booking-meta-item">
-                <div class="booking-meta-icon">
-                  <img
-                    src="./assets/icons/map-pin.svg"
-                    alt="Location"
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                <a
-                  href="https://maps.app.goo.gl/yTPuYgtQNsbe4wLJ9"
-                  target="_blank"
-                  class="map-link"
-                  >Paffrather Straße 3, 51465 Bergisch Gladbach</a
-                >
-              </div>
-              <div class="booking-meta-item">
-                <div class="booking-meta-icon">
-                  <img
-                    src="./assets/icons/phone.svg"
-                    alt="Phone"
-                    width="20"
-                    height="20"
-                  />
-                </div>
-                <a class="phone-link" href="tel:0220412345678"
-                  >02204 / 123 456 78</a
-                >
-              </div>
+        <div class="info-grid fade-up">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <img src="./assets/icons/clock.svg" alt="Öffnungszeiten" width="22" height="22" />
+            </div>
+            <div class="info-card-label">Montag – Freitag</div>
+            <div class="info-card-value">09:00 – 19:00 Uhr</div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <img src="./assets/icons/calendar.svg" alt="Samstag" width="22" height="22" />
+            </div>
+            <div class="info-card-label">Samstag</div>
+            <div class="info-card-value">09:00 – 17:00 Uhr</div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">
+              <img src="./assets/icons/phone.svg" alt="Telefon" width="22" height="22" />
+            </div>
+            <div class="info-card-label">Telefon</div>
+            <div class="info-card-value">
+              <a class="phone-link" href="tel:0220412345678">02204 / 123 456 78</a>
             </div>
           </div>
 
-          <!-- CAL.COM EMBED -->
-          <div class="cal-embed-wrapper fade-up">
-            <!-- Barber Selection Tabs -->
-            <div class="barber-tabs">
-              <button
-                class="barber-tab active"
-                data-barber="firas"
-                onclick="switchBarber('firas')"
-              >
-                Firas
-              </button>
-              <button
-                class="barber-tab"
-                data-barber="delwar"
-                onclick="switchBarber('delwar')"
-              >
-                Delwar
-              </button>
-              <!-- <button
-                class="barber-tab"
-                data-barber="despina"
-                onclick="switchBarber('despina')"
-              >
-                Despina
-              </button> -->
+          <div class="info-card info-card--wide">
+            <div class="info-card-icon">
+              <img src="./assets/icons/map-pin.svg" alt="Adresse" width="22" height="22" />
             </div>
-
-            <!-- Cal inline embed code begins -->
-            <div
-              style="width: 100%; height: 100%; overflow: scroll"
-              id="my-cal-inline-marcello"
-            ></div>
-            <script type="text/javascript" src="./script.js"></script>
-            <!-- Cal inline embed code ends -->
+            <div class="info-card-label">Adresse</div>
+            <div class="info-card-value">Paffrather Straße 3, 51465 Bergisch Gladbach</div>
+            <a
+              href="https://maps.app.goo.gl/yTPuYgtQNsbe4wLJ9"
+              target="_blank"
+              class="btn-secondary info-card-cta"
+            >Route planen →</a>
           </div>
         </div>
       </div>
@@ -464,70 +394,52 @@
     <script>
       function loadCal() {
         (function (C, A, L) {
-          let p = function (a, ar) {
-            a.q.push(ar);
-          };
+          let p = function (a, ar) { a.q.push(ar); };
           let d = C.document;
-          C.Cal =
-            C.Cal ||
-            function () {
-              let cal = C.Cal;
-              let ar = arguments;
-              if (!cal.loaded) {
-                cal.ns = {};
-                cal.q = cal.q || [];
-                d.head.appendChild(d.createElement("script")).src = A;
-                cal.loaded = true;
-              }
-              if (ar[0] === L) {
-                const api = function () {
-                  p(api, arguments);
-                };
-                const namespace = ar[1];
-                api.q = api.q || [];
-                if (typeof namespace === "string") {
-                  cal.ns[namespace] = cal.ns[namespace] || api;
-                  p(cal.ns[namespace], ar);
-                  p(cal, ["initNamespace", namespace]);
-                } else p(cal, ar);
-                return;
-              }
-              p(cal, ar);
-            };
+          C.Cal = C.Cal || function () {
+            let cal = C.Cal;
+            let ar = arguments;
+            if (!cal.loaded) {
+              cal.ns = {};
+              cal.q = cal.q || [];
+              d.head.appendChild(d.createElement("script")).src = A;
+              cal.loaded = true;
+            }
+            if (ar[0] === L) {
+              const api = function () { p(api, arguments); };
+              const namespace = ar[1];
+              api.q = api.q || [];
+              if (typeof namespace === "string") {
+                cal.ns[namespace] = cal.ns[namespace] || api;
+                p(cal.ns[namespace], ar);
+                p(cal, ["initNamespace", namespace]);
+              } else p(cal, ar);
+              return;
+            }
+            p(cal, ar);
+          };
         })(window, "https://app.cal.eu/embed/embed.js", "init");
 
-        Cal("init", "firas", { origin: "https://app.cal.eu" });
-        Cal.ns.firas("ui", {
-          theme: "dark",
-          hideEventTypeDetails: false,
-          layout: "month_view",
-        });
+        Cal.config = Cal.config || {};
+        Cal.config.forwardQueryParams = true;
 
-        Cal("init", "delwar", { origin: "https://app.cal.eu" });
-        Cal.ns.delwar("ui", {
-          theme: "dark",
-          hideEventTypeDetails: false,
-          layout: "month_view",
-        });
-
-        Cal("init", "despina", { origin: "https://app.cal.eu" });
-        Cal.ns.despina("ui", {
-          theme: "dark",
-          hideEventTypeDetails: false,
-          layout: "month_view",
+        ALL_CAL_NAMESPACES.forEach((ns) => {
+          Cal("init", ns, { origin: "https://app.cal.eu" });
+          Cal.ns[ns]("ui", {
+            theme: "dark",
+            hideEventTypeDetails: false,
+            layout: "month_view",
+          });
         });
       }
 
       function showBookingBlocked() {
-        document.querySelectorAll(".cal-embed-wrapper").forEach((el) => {
-          el.innerHTML = `<div class="cal-consent-hint">
-            <p>Für die Terminbuchung muss die Nutzung von Cal.com akzeptiert werden.</p>
-            <button class="btn-primary" id="cookie-accept-inline">Jetzt akzeptieren</button>
-          </div>`;
-          el.querySelector("#cookie-accept-inline").addEventListener(
-            "click",
-            giveConsent,
-          );
+        // Show a hint on booking buttons when consent is missing
+        document.querySelectorAll(".service-book-btn").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            document.getElementById("cookie-banner").hidden = false;
+          }, { once: true });
         });
       }
 
@@ -535,11 +447,6 @@
         localStorage.setItem("cal_consent", "1");
         document.getElementById("cookie-banner").hidden = true;
         loadCal();
-        document
-          .querySelectorAll(".cal-consent-hint")
-          .forEach(
-            (el) => el.closest(".cal-embed-wrapper") && location.reload(),
-          );
       }
 
       const banner = document.getElementById("cookie-banner");
