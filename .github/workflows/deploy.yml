@@ -35,7 +35,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deploy-attempt-2.outputs.page_url || steps.deploy-attempt-1.outputs.page_url }}
+      url: ${{ steps.deploy-attempt-1.outputs.page_url || steps.deploy-attempt-2.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages (attempt 1)
         id: deploy-attempt-1
@@ -45,11 +45,4 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 2)
         id: deploy-attempt-2
         if: steps.deploy-attempt-1.outcome == 'failure'
-        continue-on-error: true
         uses: actions/deploy-pages@v5
-
-      - name: Fail if all deployment attempts failed
-        if: steps.deploy-attempt-1.outcome == 'failure' && steps.deploy-attempt-2.outcome == 'failure'
-        run: |
-          echo "GitHub Pages deployment failed twice."
-          exit 1
