@@ -115,6 +115,8 @@
   background: var(--bg2);
   overflow: hidden;
   transition: border-color 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-card:hover {
@@ -147,6 +149,9 @@
 .team-info {
   padding: 1.5rem;
   border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .team-name {
@@ -168,6 +173,7 @@
 .team-spec {
   font-size: 0.8rem;
   color: var(--muted2);
+  margin-bottom: 1.5rem;
 }
 
 /* BOOKING SECTION */
@@ -297,16 +303,7 @@
   }
 }
 
-.cal-embed-wrapper {
-  border: 1px solid var(--border);
-  background: var(--bg);
-  overflow: hidden;
-  min-height: 600px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
+/* SERVICE TABS */
 .barber-tabs {
   display: flex;
   border-bottom: 1px solid var(--border);
@@ -343,48 +340,13 @@
   border-bottom: 2px solid var(--accent);
 }
 
-#my-cal-inline-marcello {
-  flex: 1;
-}
-
-.cal-placeholder {
+/* TEAM BOOK BUTTON */
+.team-book-btn {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  width: 100%;
+  display: block;
   text-align: center;
-  padding: 3rem;
-}
-
-.cal-placeholder-icon {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 5rem;
-  color: var(--border-strong);
-  margin-bottom: 1.5rem;
-}
-
-.cal-placeholder-title {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  margin-bottom: 0.5rem;
-}
-
-.cal-placeholder-sub {
-  font-family: "DM Mono", monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.cal-placeholder-code {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  text-align: left;
 }
 
 /* GALLERY SLIDER */

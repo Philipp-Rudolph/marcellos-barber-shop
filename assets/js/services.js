@@ -125,26 +125,9 @@ const SERVICES = {
   ],
 };
 
-// Collect all namespaces (last segment of calLink) for Cal init
-const ALL_CAL_NAMESPACES = Object.values(SERVICES)
-  .flat()
-  .filter((s) => s.calLink)
-  .map((s) => s.calLink.split("/").pop());
-
 (function () {
   const grid = document.getElementById("services-grid");
   const tabs = document.querySelectorAll("#services-tabs .barber-tab");
-
-  function bookingButton(s) {
-    if (!s.calLink) return "";
-    const ns = s.calLink.split("/").pop();
-    const config = JSON.stringify({
-      layout: "month_view",
-      useSlotsViewOnSmallScreen: "true",
-      theme: "dark",
-    });
-    return `<button class="btn-primary service-book-btn" data-cal-link="${s.calLink}" data-cal-namespace="${ns}" data-cal-config='${config}'>Buchen</button>`;
-  }
 
   function renderServices(category) {
     grid.innerHTML = SERVICES[category]
@@ -156,7 +139,6 @@ const ALL_CAL_NAMESPACES = Object.values(SERVICES)
           `<p class="service-desc">${s.desc}</p>` +
           `<div class="service-footer">` +
           `<div class="service-price">${s.price}</div>` +
-          bookingButton(s) +
           `</div>` +
           `</div>`,
       )
