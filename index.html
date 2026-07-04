@@ -3,7 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcello — Barbershop</title>
+
+    <title>Marcello Barber Shop — Bergisch Gladbach</title>
+    <meta name="description" content="Dein Barbershop in Bergisch Gladbach. Herrenschnitte, Bartpflege, Damen-Haarstyling & mehr. Jetzt online Termin buchen bei Firas, Delwar oder Despina." />
+    <link rel="canonical" href="https://marcello-barber-shop.de/" />
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marcello-barber-shop.de/" />
+    <meta property="og:title" content="Marcello Barber Shop — Bergisch Gladbach" />
+    <meta property="og:description" content="Dein Barbershop in Bergisch Gladbach. Herrenschnitte, Bartpflege, Damen-Haarstyling & mehr. Jetzt online Termin buchen." />
+    <meta property="og:image" content="https://marcello-barber-shop.de/assets/images/hero-2.webp" />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HairSalon",
+      "name": "Marcello Barber Shop",
+      "url": "https://marcello-barber-shop.de",
+      "telephone": "+4922022097640",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Paffrather Straße 3",
+        "addressLocality": "Bergisch Gladbach",
+        "postalCode": "51465",
+        "addressCountry": "DE"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "€€",
+      "image": "https://marcello-barber-shop.de/assets/images/hero-2.webp"
+    }
+    </script>
+
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
@@ -27,9 +74,16 @@
       <ul class="nav-links">
         <li><a href="#services">Leistungen</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#booking">Termin</a></li>
+        <li><a href="https://barbershopmarcello.setmore.com">Termin</a></li>
+        <li>
+          <a href="https://www.instagram.com/barbershop_marcello_/" target="_blank" rel="noopener noreferrer" class="nav-instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></svg>
+          </a>
+        </li>
       </ul>
-      <a class="nav-cta" href="#booking">Termin buchen</a>
+      <a class="nav-cta" href="https://barbershopmarcello.setmore.com"
+        >Termin buchen</a
+      >
     </nav>
 
     <!-- HERO -->
@@ -47,7 +101,9 @@
           Statement ist.
         </p>
         <div class="hero-actions">
-          <a class="btn-primary" href="#booking">Termin buchen</a>
+          <a class="btn-primary" href="https://barbershopmarcello.setmore.com"
+            >Termin buchen</a
+          >
           <a class="btn-secondary" href="#services">Leistungen ansehen</a>
         </div>
       </div>
@@ -256,9 +312,7 @@
             </div>
             <div class="info-card-label">Telefon</div>
             <div class="info-card-value">
-              <a class="phone-link" href="tel:022022097640"
-                >02202 / 2097640</a
-              >
+              <a class="phone-link" href="tel:022022097640">02202 / 2097640</a>
             </div>
           </div>
 
@@ -370,6 +424,11 @@
         <li><a href="./impressum.html">Impressum</a></li>
         <li><a href="./datenschutz.html">Datenschutz</a></li>
         <li><a href="#booking">Termin</a></li>
+        <li>
+          <a href="https://www.instagram.com/barbershop_marcello_/" target="_blank" rel="noopener noreferrer" class="footer-instagram" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"/></svg>
+          </a>
+        </li>
       </ul>
       <div class="footer-copy">© 2025 Marcello Barber Shop</div>
     </footer>

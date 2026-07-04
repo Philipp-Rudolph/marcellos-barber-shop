@@ -24,6 +24,7 @@ nav {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 2.5rem;
   list-style: none;
 }
@@ -58,6 +59,17 @@ nav {
 
 .nav-cta:hover {
   background: var(--accent2);
+}
+
+.nav-instagram {
+  display: flex;
+  align-items: center;
+  color: var(--muted2);
+  transition: color 0.2s;
+}
+
+.nav-instagram:hover {
+  color: var(--accent);
 }
 
 @media (max-width: 649px) {

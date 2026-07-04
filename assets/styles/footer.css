@@ -25,6 +25,7 @@ footer {
 
 .footer-links {
   display: flex;
+  align-items: center;
   gap: 2rem;
   list-style: none;
 }
@@ -41,6 +42,11 @@ footer {
 
 .footer-links a:hover {
   color: var(--accent);
+}
+
+.footer-instagram {
+  display: flex;
+  align-items: center;
 }
 
 .phone-link, .map-link {
