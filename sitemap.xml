@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.marcello-barber-shop.de/</loc>
+    <loc>https://www.barber-shop-marcello.de/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.marcello-barber-shop.de/impressum.html</loc>
+    <loc>https://www.barber-shop-marcello.de/impressum.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.marcello-barber-shop.de/datenschutz.html</loc>
+    <loc>https://www.barber-shop-marcello.de/datenschutz.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
