@@ -158,14 +158,14 @@
 
     <!-- SERVICES -->
     <section id="services" class="section">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <div>
           <div class="section-label">Was wir machen</div>
           <h2 class="section-title">Leistungen</h2>
         </div>
       </div>
 
-      <div class="barber-tabs fade-up" id="services-tabs">
+      <div class="barber-tabs" id="services-tabs">
         <button class="barber-tab active" data-tab="herren">Herren</button>
         <button class="barber-tab" data-tab="damen">Damen</button>
       </div>
@@ -179,7 +179,7 @@
 
     <!-- TEAM -->
     <section id="team" class="section">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <div>
           <div class="section-label">Die Meister</div>
           <h2 class="section-title">Unser Team</h2>
@@ -188,7 +188,7 @@
       </div>
 
       <div class="team-grid">
-        <div class="team-card fade-up">
+        <div class="team-card">
           <div class="team-photo">
             <img
               src="./assets/images/firas-profile.webp"
@@ -212,7 +212,7 @@
             >
           </div>
         </div>
-        <div class="team-card fade-up">
+        <div class="team-card">
           <div class="team-photo">
             <img
               src="./assets/images/delwar-profile.webp"
@@ -236,7 +236,7 @@
             >
           </div>
         </div>
-        <div class="team-card fade-up">
+        <div class="team-card">
           <div class="team-photo">
             <img
               src="./assets/images/despina-profile.webp"
@@ -260,7 +260,7 @@
             >
           </div>
         </div>
-        <div class="team-card fade-up">
+        <div class="team-card">
           <div class="team-photo">
             <img
               src="./assets/images/ahmad-profile.webp"
@@ -289,7 +289,7 @@
     <!-- BOOKING -->
     <section id="booking">
       <div class="booking-inner">
-        <div class="booking-header fade-up">
+        <div class="booking-header">
           <div class="section-label">Termin & Kontakt</div>
           <h2 class="section-title">So erreichst du uns</h2>
           <p class="booking-sub">
@@ -297,7 +297,7 @@
           </p>
         </div>
 
-        <div class="info-grid fade-up">
+        <div class="info-grid">
           <div class="info-card">
             <div class="info-card-icon">
               <img
@@ -365,14 +365,14 @@
 
     <!-- GALLERY -->
     <section id="gallery" class="section">
-      <div class="section-header fade-up">
+      <div class="section-header">
         <div>
           <div class="section-label">Impressionen</div>
           <h2 class="section-title">Galerie</h2>
         </div>
       </div>
 
-      <div class="slider-wrapper fade-up">
+      <div class="slider-wrapper">
         <div class="slider" id="gallery-slider">
           <div class="slide">
             <img
@@ -499,21 +499,6 @@
           if (Math.abs(diff) > 50) goTo(diff > 0 ? current + 1 : current - 1);
         });
       })();
-    </script>
-
-    <script>
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              obs.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
-      );
-      document.querySelectorAll(".fade-up").forEach((el) => obs.observe(el));
     </script>
   </body>
 </html>
